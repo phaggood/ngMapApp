@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope) {
+.controller('DashCtrl', function($scope,$cordovaDevice) {
         $scope.device = $cordovaDevice.getDevice();
         $scope.uuid = $cordovaDevice.getUUID();
 
